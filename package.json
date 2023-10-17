@@ -1,9 +1,12 @@
 {
+  "homepage": "https://frankenworks.github.io",
   "name": "frankenworks.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +24,8 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "wepback": "^1.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
