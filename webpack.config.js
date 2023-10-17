@@ -14,7 +14,7 @@ const fse = require("fs-extra");
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy files", function () {
-      // fse.copySync("./app/main.css", "./dist/main.css");
+      fse.copySync("./app/main.css", "./dist/main.css");
       /*
         If you needed to copy another file or folder
         such as your "images" folder, you could just
@@ -72,7 +72,7 @@ if (currentTask == "webpackDev" || currentTask == "dev") {
 }
 
 if (currentTask == "webpackBuild") {
-  config.plugins.push(new CleanWebpackPlugin(), new RunAfterCompile());
+  config.plugins.push(new CleanWebpackPlugin());
   config.mode = "production";
   config.output = {
     publicPath: "/",
