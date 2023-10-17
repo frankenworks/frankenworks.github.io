@@ -1,0 +1,8 @@
+# ignore dev environment variables
+.env
+
+# ignore production testing
+dist/
+
+# ignore node packages
+node_modules/
