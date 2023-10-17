@@ -2,7 +2,7 @@
 .env
 
 # ignore production testing
-dist/
+# dist/
 
 # ignore node packages
 node_modules/
