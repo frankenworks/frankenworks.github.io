@@ -6,3 +6,6 @@ dist/
 
 # ignore node packages
 node_modules/
+
+# ignore public files temporarily
+public/

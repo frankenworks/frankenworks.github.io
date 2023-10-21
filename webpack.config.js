@@ -11,6 +11,7 @@ class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy files", function () {
       // icons
+      // fse.copySync("./pubic/icon.ico", "./dist/icon.ico");
     });
   }
 }
@@ -44,6 +45,21 @@ config = {
             presets: ["@babel/preset-react", ["@babel/preset-env", { targets: { node: "12" } }]]
           }
         }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: "file-loader"
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "svg-url-loader",
+            options: {
+              limit: 10000
+            }
+          }
+        ]
       }
     ]
   }
