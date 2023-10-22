@@ -12,8 +12,7 @@ class RunAfterCompile {
     compiler.hooks.done.tap("Copy files", function () {
       // icons
       // fse.copySync("./public/ico/icon.png", "./dist/icon.png");
-      // fse.copySync("./public/logo/", "./dist/public/logo/");
-      // fse.copySync("./public/assets/", "./dist/public/assets/");
+      fse.copySync("./dist/index.html", "./dist/404.html");
     });
   }
 }
