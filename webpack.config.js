@@ -11,7 +11,9 @@ class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy files", function () {
       // icons
-      // fse.copySync("./pubic/icon.ico", "./dist/icon.ico");
+      // fse.copySync("./public/ico/icon.png", "./dist/icon.png");
+      // fse.copySync("./public/logo/", "./dist/public/logo/");
+      // fse.copySync("./public/assets/", "./dist/public/assets/");
     });
   }
 }
@@ -29,7 +31,8 @@ config = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "app/index-template.html",
-      alwaysWriteToDisk: true
+      alwaysWriteToDisk: true,
+      favicon: "./public/ico/favicon-16x16.png"
     }),
     new HtmlWebpackHarddiskPlugin()
   ],

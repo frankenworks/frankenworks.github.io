@@ -2,18 +2,18 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 import Heading from "../styles/Heading";
-import HexagonBG from "../common/HexagonBG";
-import { Link } from "react-router-dom";
 
 const StyledIntroLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   grid-row-gap: 2rem;
-  height: 80vh;
+  height: 90vh;
 
-  @media (max-width: 59em) {
+  @media (max-width: 44em) {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    height: auto;
   }
 `;
 
@@ -33,6 +33,9 @@ const StyledTextArea = styled.div`
   @media (max-width: 59em) {
     align-items: center;
     margin-bottom: 5rem;
+  }
+  @media (max-width: 44em) {
+    padding: 2rem 2rem;
   }
 `;
 
@@ -55,11 +58,18 @@ const StyledButton = styled.button`
 
 const StyledDescription = styled.p`
   max-width: 30rem;
+  @media (max-width: 59em) {
+    font-size: 1rem;
+    max-width: 18rem;
+  }
 `;
 
 const StyledImg = styled.img`
   width: 80%;
   max-width: 40rem;
+  @media (max-width: 44em) {
+    max-width: 20rem;
+  }
 `;
 
 function HomeIntro({ contactRef }) {
@@ -76,7 +86,7 @@ function HomeIntro({ contactRef }) {
         <div>
           <Heading as="h1">Hi, I'm Kenji</Heading>
           <Heading as="h2">Software Engineer | Data Scientist</Heading>
-          <StyledDescription>Business is all about communication. When everything makes sense, choice: you will be happy or there is unforeseen evil</StyledDescription>
+          <StyledDescription>Good design is achieved not when there is nothing left to add, but when there is nothing left to remove</StyledDescription>
           <StyledButton onClick={goToContact}>
             <Heading as="h2">Contact Me</Heading>
           </StyledButton>

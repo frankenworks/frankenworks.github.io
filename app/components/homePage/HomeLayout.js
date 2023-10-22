@@ -8,11 +8,6 @@ const StyledHomeLayout = styled.div`
   grid-template-columns: 1fr;
   justify-content: space-between;
   grid-row-gap: 6.4rem;
-  //height: 90vh;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 function HomeLayout() {

@@ -7,13 +7,10 @@ const Heading = styled.h1`
       font-size: 8rem;
       font-weight: 700;
       @media (max-width: 75em) {
-        font-size: 6rem;
+        font-size: 7rem;
       }
       @media (max-width: 59em) {
         font-size: 5rem;
-      }
-      @media (max-width: 450px) {
-        font-size: 4rem;
       }
     `}
 
@@ -23,10 +20,16 @@ const Heading = styled.h1`
       padding-top: 0.5rem;
       font-size: 2rem;
       font-weight: 600;
-      @media (max-width: 768px) {
-        font-size: 1rem;
+      @media (max-width: 75em) {
+        // font-size: 1.75rem;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 59em) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 44em) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 34em) {
         font-size: 1.5rem;
       }
     `}
@@ -36,6 +39,9 @@ const Heading = styled.h1`
     css`
       font-size: 2rem;
       font-weight: 500;
+      @media (max-width: 59em) {
+        font-size: 1.25rem;
+      }
     `}
 
   ${props =>
@@ -44,6 +50,13 @@ const Heading = styled.h1`
       font-size: 4rem;
       font-weight: 600;
       text-align: center;
+    `}
+
+  ${props =>
+    props.as === "h5" &&
+    css`
+      font-size: 3rem;
+      font-weight: 600;
     `}
 
   line-height: 1.4;

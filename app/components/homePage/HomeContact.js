@@ -1,6 +1,8 @@
 import React, { useEffect, forwardRef } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Heading from "../styles/Heading";
 
 const StyledContactLayout = styled.div`
@@ -10,8 +12,12 @@ const StyledContactLayout = styled.div`
   grid-row-gap: 2rem;
   height: 80vh;
 
-  @media (max-width: 768px) {
+  @media (max-width: 44em) {
     grid-template-columns: 1fr;
+    height: auto;
+  }
+  @media (max-width: 34em) {
+    // height: 60vh;
   }
 `;
 
@@ -22,7 +28,10 @@ const StyledPictureArea = styled.div`
   justify-content: center;
   gap: 10rem;
   border: 1px solid white;
-  // background-color: #777;
+
+  @media (max-width: 44em) {
+    padding: 2rem;
+  }
 `;
 
 const StyledImg = styled.img`
@@ -38,6 +47,33 @@ const StyledTextArea = styled.div`
   padding: 1rem 5rem;
 `;
 
+const StyledLink = styled(Link)`
+  &:link,
+  &:visited {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: #ffa500;
+  }
+  ,
+  &:active,
+  &.active:link,
+  &.active:visited {
+    text-decoration: none;
+  }
+`;
+
+const StyledParagraph = styled.p`
+  align-self: center;
+  margin: 0;
+`;
+
 const HomeContact = forwardRef((props, ref) => {
   return (
     <StyledContactLayout ref={ref}>
@@ -45,8 +81,27 @@ const HomeContact = forwardRef((props, ref) => {
         <Heading as="h4">Contact Me</Heading>
         <div>
           <Heading as="h2">Email</Heading>
+          <StyledParagraph>peralejok@gmail.com</StyledParagraph>
+          <StyledParagraph>kip@innovative.com.ph</StyledParagraph>
+        </div>
+        <div>
           <Heading as="h2">Phone</Heading>
+          <StyledParagraph>+63 998 989 4055</StyledParagraph>
+        </div>
+        <div>
           <Heading as="h2">Other Links</Heading>
+          <StyledLink to="https://www.linkedin.com/in/kenji-peralejo/" target="_blank">
+            <FaLinkedinIn />
+            <StyledParagraph>LinkedIn</StyledParagraph>
+          </StyledLink>
+          <StyledLink to="https://github.com/frankenworks" target="_blank">
+            <FaGithub />
+            <StyledParagraph>Github</StyledParagraph>
+          </StyledLink>
+          <StyledLink to="https://www.facebook.com/kenjifrancis.peralejo/" target="_blank">
+            <FaFacebook />
+            <StyledParagraph>Facebook</StyledParagraph>
+          </StyledLink>
         </div>
       </StyledTextArea>
       <StyledPictureArea>

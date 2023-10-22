@@ -9,8 +9,9 @@ const StyledAboutLayout = styled.div`
   grid-column-gap: 6rem;
   height: 80vh;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 59em) {
     grid-template-columns: 1fr;
+    height: 90vh;
   }
 `;
 
@@ -20,10 +21,18 @@ const StyledArea = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
+  // height: 50%;
 `;
 
 const StyledText = styled.p`
   max-width: 50rem;
+  @media (max-width: 75em) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 59em) {
+    width: 50%;
+    font-size: 1rem;
+  }
   @media (max-width: 44em) {
     font-size: 0.8rem;
   }
@@ -33,7 +42,11 @@ const StyledText = styled.p`
 `;
 
 const StyledImg = styled.img`
+  width: 80%;
   max-width: 70rem;
+  @media (max-width: 59em) {
+    max-width: 40rem;
+  }
 `;
 
 function AboutLayout() {

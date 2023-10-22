@@ -15,6 +15,14 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 75em) {
+    padding: 0.6rem 2.4rem;
+  }
+  @media (max-width: 34em) {
+    flex-direction: column;
+    padding: 0.6rem 1rem;
+    text-align: center;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`

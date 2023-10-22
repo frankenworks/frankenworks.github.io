@@ -5,20 +5,25 @@ import styled from "styled-components";
 // Components
 import Header from "./Header";
 import Footer from "./Footer";
-import HexagonBG from "./HexagonBG";
 
 const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  align-items: space-between;
-  overflow-y: scroll;
+  // gap: auto;
+  // flex-grow: 1;
+  // grid-template-rows: auto 1fr auto;
+  // grid-template-columns: 1fr;
+  // height: 100vh;
+  justify-content: space-between;
+  // overflow-y: scroll;
 `;
 
 const Main = styled.main`
   background-color: black;
   padding: 4rem 4.8rem 6.4rem;
-  // height: 100vh;
+  @media (max-width: 34em) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const StyledOutlet = styled(Outlet)`

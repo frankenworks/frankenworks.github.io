@@ -4,9 +4,11 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 import ExperienceSelector from "./ExperienceSelector";
 import ExpHighSchool from "./expPages/expHighSchool";
-import PageNotFound from "../common/PageNotFound";
 import ExpNotFound from "./expPages/ExpNotFound";
 import ExpCollege from "./expPages/ExpCollege";
+import ExpMasters from "./expPages/ExpMasters";
+import ExpInvestors from "./expPages/ExpInvestors";
+import ExpWebDev from "./expPages/ExpWebDev";
 
 const StyledExpLayout = styled.div`
   display: grid;
@@ -14,9 +16,18 @@ const StyledExpLayout = styled.div`
   justify-content: space-between;
   grid-row-gap: 2rem;
   height: 80vh;
-
+  @media (max-width: 75em) {
+    // font-size: 6rem;
+  }
+  @media (max-width: 59em) {
+    // font-size: 5rem;
+  }
+  @media (max-width: 44em) {
+    grid-template-columns: 1fr;
+  }
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    height: auto;
   }
 `;
 
@@ -25,14 +36,12 @@ function ExperienceLayout() {
     <StyledExpLayout>
       <ExperienceSelector />
       <Routes>
-        <Route index element={<Navigate replace to="/experience/pr-4" />} />
+        <Route index element={<Navigate replace to="/experience/wk-2" />} />
         <Route path="/ed-1" element={<ExpHighSchool />} />
         <Route path="/ed-2" element={<ExpCollege />} />
-        <Route path="/wk-1" element={<ExpHighSchool />} />
-        <Route path="/pr-1" element={<ExpHighSchool />} />
-        <Route path="/pr-2" element={<ExpHighSchool />} />
-        <Route path="/pr-3" element={<ExpHighSchool />} />
-        <Route path="/pr-4" element={<ExpHighSchool />} />
+        <Route path="/ed-3" element={<ExpMasters />} />
+        <Route path="/wk-1" element={<ExpWebDev />} />
+        <Route path="/wk-2" element={<ExpInvestors />} />
         <Route path="/*" element={<ExpNotFound />} />
       </Routes>
     </StyledExpLayout>

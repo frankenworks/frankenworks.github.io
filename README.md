@@ -1,8 +1,6 @@
 # About
 
-Testing Github Pages
-
-Lorem Ipsum Content
+Source Code for my personal site
 
 # Development
 
@@ -20,3 +18,7 @@ Once you are satisfied with the dev build, execute:
 npm run build
 npm run deploy
 ```
+
+# Improvements
+
+I rushed this code in my spare time and there are several improvements which can be made, such as abstraction of style components and lazy loading.
