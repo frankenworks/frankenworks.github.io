@@ -1,6 +1,7 @@
 import React, { useEffect, forwardRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import VCARD from "../../../public/assets/VCARD.png";
 
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Heading from "../styles/Heading";
@@ -105,7 +106,7 @@ const HomeContact = forwardRef((props, ref) => {
         </div>
       </StyledTextArea>
       <StyledPictureArea>
-        <StyledImg src={require("../../../public/assets/VCARD.png").default} alt="QR Code Contact Details" />
+        <StyledImg src={VCARD} alt="QR Code Contact Details" />
         <Heading as="h2">Or scan this QR Code!</Heading>
       </StyledPictureArea>
     </StyledContactLayout>
