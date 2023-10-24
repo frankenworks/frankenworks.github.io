@@ -105,7 +105,7 @@ function SkillsLayout() {
           <StyledHeading>Machine Design</StyledHeading>
           <StyledElem>
             <StyledP>Experienced in CAD designing for various projects</StyledP>
-            <StyledP>Helped design wheelchair modifications for a palsy patient in 2017</StyledP>
+            <StyledP>Designed wheelchair modifications for a palsy patient in 2017</StyledP>
           </StyledElem>
           <StyledHeading>Japanese Speaking</StyledHeading>
           <StyledElem>
