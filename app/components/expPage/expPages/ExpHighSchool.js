@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import pshsLogo from "../../../../public/logo/pshs.png";
 
 // components
 import Heading from "../../styles/Heading";
@@ -19,7 +20,7 @@ function ExpHighSchool() {
   return (
     <StyledDiv>
       <StyledHeader>
-        <StyledImg height="80rem" src={require("../../../../public/logo/pshs.png").default} alt="PSHS Logo" />
+        <StyledImg height="80rem" src={pshsLogo} alt="PSHS Logo" />
         <StyledTitle>
           <div>
             <Heading as="h2">Philippine Science High School</Heading>

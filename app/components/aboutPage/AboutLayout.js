@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import Heading from "../styles/Heading";
+import wheelPic from "../../../public/assets/ferris_wheel-2012.png";
 
 const StyledAboutLayout = styled.div`
   display: grid;
@@ -65,7 +66,7 @@ function AboutLayout() {
         <StyledText>Every man dies, but not every man really lives. When you die, you're going to regret the things you don't do. When I die, I'm going to regret the things I don't know.</StyledText>
       </StyledArea>
       <StyledArea>
-        <StyledImg src={require("../../../public/assets/ferris_wheel-2012.png").default} alt="kenji on a ferris wheel" />
+        <StyledImg src={wheelPic} alt="kenji on a ferris wheel" />
       </StyledArea>
     </StyledAboutLayout>
   );

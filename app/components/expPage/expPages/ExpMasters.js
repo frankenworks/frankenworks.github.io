@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import UPLogo from "../../../../public/logo/UPlogo.png";
 
 // components
 import Heading from "../../styles/Heading";
@@ -11,7 +12,7 @@ function ExpMasters() {
   return (
     <StyledDiv>
       <StyledHeader>
-        <img height="80rem" src={require("../../../../public/logo/UPlogo.png").default} alt="UP Logo" />
+        <img height="80rem" src={UPLogo} alt="UP Logo" />
         <StyledHeader>
           <StyledTitle>
             <div>
