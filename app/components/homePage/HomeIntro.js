@@ -11,6 +11,10 @@ const StyledIntroLayout = styled.div`
   grid-row-gap: 2rem;
   height: 90vh;
 
+  @media (max-height: 40em) {
+    height: auto;
+  }
+
   @media (max-width: 44em) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;

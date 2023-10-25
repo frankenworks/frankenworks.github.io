@@ -10,13 +10,22 @@ const StyledList = styled.div`
   grid-template-rows 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  // height: 80vh;
+  height: 90vh;
 
+  @media(max-height: 40em) {
+    height: auto;
+  }
 
   @media (max-width: 75em) {
     grid-template-columns: 1fr;
     grid-template-rows 1fr;
-    // height: calc(100vh-10rem);
+
+    @media(max-height: 61em) {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 59em) {
     // height: auto;
   }
 `;

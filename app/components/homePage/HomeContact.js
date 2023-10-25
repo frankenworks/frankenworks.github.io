@@ -13,12 +13,13 @@ const StyledContactLayout = styled.div`
   grid-row-gap: 2rem;
   height: 80vh;
 
+  @media (max-height: 40em) {
+    height: auto;
+  }
+
   @media (max-width: 44em) {
     grid-template-columns: 1fr;
     height: auto;
-  }
-  @media (max-width: 34em) {
-    // height: 60vh;
   }
 `;
 

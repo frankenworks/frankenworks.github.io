@@ -15,13 +15,12 @@ const StyledExpLayout = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   grid-row-gap: 2rem;
-  height: 80vh;
-  @media (max-width: 75em) {
-    // font-size: 6rem;
+  height: 90vh;
+
+  @media (max-height: 40em) {
+    height: auto;
   }
-  @media (max-width: 59em) {
-    // font-size: 5rem;
-  }
+
   @media (max-width: 44em) {
     grid-template-columns: 1fr;
   }

@@ -8,11 +8,14 @@ const StyledAboutLayout = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   grid-column-gap: 6rem;
-  height: 80vh;
+  height: 90vh;
+
+  @media (max-height: 40em) {
+    height: auto;
+  }
 
   @media (max-width: 59em) {
     grid-template-columns: 1fr;
-    height: 90vh;
   }
 `;
 
