@@ -96,7 +96,7 @@
     top: 14px;
     left: 12px;
   }
-`,s=a.ZP.img`
+`,h=a.ZP.img`
   position: absolute;
   display: flex;
   top: 22px;
@@ -107,7 +107,7 @@
     top: 12px;
     left: 10px;
   }
-`,h=a.ZP.img`
+`,s=a.ZP.img`
   position: absolute;
   display: flex;
   top: 24px;
@@ -122,19 +122,28 @@
   z-index: 3;
   font-weight: bold;
   border: 1px solid white;
-`,f=function({filterField:e,options:t}){return i.createElement(r,null,i.createElement(c,null,i.createElement(m,{"data-tooltip-id":"cpp-tooltip","data-tooltip-content":"C++"},i.createElement(d,{height:"80rem",src:l(975),alt:"cpp logo"})),i.createElement(g,{noArrow:!0,id:"cpp-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"cs-tooltip","data-tooltip-content":"C#"},i.createElement(d,{height:"80rem",src:l(277),alt:"csharp logo"})),i.createElement(g,{noArrow:!0,id:"cs-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"python-tooltip","data-tooltip-content":"Python"},i.createElement(s,{height:"60rem",src:l(650),alt:"python logo"})),i.createElement(g,{noArrow:!0,id:"python-tooltip",style:{backgroundColor:"#000",color:"#fff"}})),i.createElement(c,null,i.createElement(m,{"data-tooltip-id":"html-tooltip","data-tooltip-content":"HTML"},i.createElement(p,{height:"60rem",src:l(755),alt:"html5 logo"})),i.createElement(g,{noArrow:!0,id:"html-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"css-tooltip","data-tooltip-content":"CSS"},i.createElement(p,{height:"60rem",src:l(363),alt:"css logo"})),i.createElement(g,{noArrow:!0,id:"css-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"js-tooltip","data-tooltip-content":"Javascript"},i.createElement(h,{height:"55rem",src:l(737),alt:"javascript logo"})),i.createElement(g,{noArrow:!0,id:"js-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"react-tooltip","data-tooltip-content":"React"},i.createElement(d,{height:"80rem",src:l(252),alt:"react logo"})),i.createElement(g,{noArrow:!0,id:"react-tooltip",style:{backgroundColor:"#000",color:"#fff"}})))},x=a.ZP.div`
+`,f=function({filterField:e,options:t}){return i.createElement(r,null,i.createElement(c,null,i.createElement(m,{"data-tooltip-id":"cpp-tooltip","data-tooltip-content":"C++"},i.createElement(d,{height:"80rem",src:l(975),alt:"cpp logo"})),i.createElement(g,{noArrow:!0,id:"cpp-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"cs-tooltip","data-tooltip-content":"C#"},i.createElement(d,{height:"80rem",src:l(277),alt:"csharp logo"})),i.createElement(g,{noArrow:!0,id:"cs-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"python-tooltip","data-tooltip-content":"Python"},i.createElement(h,{height:"60rem",src:l(650),alt:"python logo"})),i.createElement(g,{noArrow:!0,id:"python-tooltip",style:{backgroundColor:"#000",color:"#fff"}})),i.createElement(c,null,i.createElement(m,{"data-tooltip-id":"html-tooltip","data-tooltip-content":"HTML"},i.createElement(p,{height:"60rem",src:l(755),alt:"html5 logo"})),i.createElement(g,{noArrow:!0,id:"html-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"css-tooltip","data-tooltip-content":"CSS"},i.createElement(p,{height:"60rem",src:l(363),alt:"css logo"})),i.createElement(g,{noArrow:!0,id:"css-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"js-tooltip","data-tooltip-content":"Javascript"},i.createElement(s,{height:"55rem",src:l(737),alt:"javascript logo"})),i.createElement(g,{noArrow:!0,id:"js-tooltip",style:{backgroundColor:"#000",color:"#fff"}}),i.createElement(m,{"data-tooltip-id":"react-tooltip","data-tooltip-content":"React"},i.createElement(d,{height:"80rem",src:l(252),alt:"react logo"})),i.createElement(g,{noArrow:!0,id:"react-tooltip",style:{backgroundColor:"#000",color:"#fff"}})))},x=a.ZP.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  // height: 80vh;
+  height: 90vh;
 
+  @media(max-height: 40em) {
+    height: auto;
+  }
 
   @media (max-width: 75em) {
     grid-template-columns: 1fr;
     grid-template-rows 1fr;
-    // height: calc(100vh-10rem);
+
+    @media(max-height: 61em) {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 59em) {
     // height: auto;
   }
 `,v=a.ZP.div`
