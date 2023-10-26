@@ -15,7 +15,6 @@ npm run dev
 Once you are satisfied with the dev build, execute:
 
 ```
-npm run build
 npm run deploy
 ```
 

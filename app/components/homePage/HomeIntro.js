@@ -72,6 +72,11 @@ const StyledDescription = styled.p`
 const StyledImg = styled.img`
   width: 80%;
   max-width: 40rem;
+
+  -webkit-filter: brightness(120%) saturate(120%);
+  -moz-filter: brightness(120%) saturate(120%);
+  filter: brightness(120%) saturate(120%);
+
   @media (max-width: 44em) {
     max-width: 20rem;
   }

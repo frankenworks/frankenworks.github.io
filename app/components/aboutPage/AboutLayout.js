@@ -48,6 +48,11 @@ const StyledText = styled.p`
 const StyledImg = styled.img`
   width: 80%;
   max-width: 70rem;
+
+  -webkit-filter: brightness(120%) saturate(130%);
+  -moz-filter: brightness(120%) saturate(130%);
+  filter: brightness(120%) saturate(130%);
+
   @media (max-width: 59em) {
     max-width: 40rem;
   }
