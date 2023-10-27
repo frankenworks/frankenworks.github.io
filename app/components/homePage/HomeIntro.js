@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import bearPic from "../../../public/assets/bearHat2015.png";
+import bearPic from "../../../public/assets/bearHat2015.jpg";
 
 import Heading from "../styles/Heading";
 
@@ -90,7 +90,7 @@ function HomeIntro({ contactRef }) {
   return (
     <StyledIntroLayout>
       <StyledPictureArea>
-        <StyledImg src={bearPic} alt="kenji with a bear hat" />
+        <StyledImg src={bearPic} loading="lazy" alt="kenji with a bear hat" />
       </StyledPictureArea>
       <StyledTextArea>
         <div>
