@@ -87,10 +87,6 @@ const HomeContact = forwardRef((props, ref) => {
           <StyledParagraph>kip@innovative.com.ph</StyledParagraph>
         </div>
         <div>
-          <Heading as="h2">Phone</Heading>
-          <StyledParagraph>+63 998 989 4055</StyledParagraph>
-        </div>
-        <div>
           <Heading as="h2">Other Links</Heading>
           <StyledLink to="https://www.linkedin.com/in/kenji-peralejo/" target="_blank">
             <FaLinkedinIn />
